@@ -1,0 +1,98 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.centerButton{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  color: black;
+  width: 30%;
+}
+ p{
+	font-family: Arial;
+	color:white;
+	overflow: hidden;
+}
+h1,h2{
+	font-family: Arial;
+	color:white ;
+}
+figcaption{
+	color:white;
+}
+body{
+	background-image: url("space4.jpg");
+}
+a{
+	color:yellow;
+	text-decoration: none;
+}
+table{
+	border:1px solid white;
+	color: black;
+	background-color: green;
+}
+li{
+	float: left;
+}
+li a {
+  display: block;
+  padding: 20px;
+  background-image: url("space4.jpg");
+  font-size: 24px;
+  text-decoration: none;
+}
+li a:hover {
+  background-image: url("tenor.gif");
+}
+.nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.main2{
+  background-image: url("space4.jpg");
+  width: 1150px;
+  border: 15px white;
+  border-style: dotted;
+  padding: 50px;
+  margin: 20px;
+  column-count: 2;
+}
+
+.main1{
+ background-image: url("space4.jpg");
+  width: 1150px;
+  border: 15px white;
+  border-style: dotted;
+  padding: 50px;
+  margin: 20px;
+  column-count: 2;
+}
+
+.foot{
+	color:white;
+	float:right;
+}
+#head{
+  color: red;
+}
+.registry{
+  background-image: url("space4.jpg");
+}
+.innerText{
+  color: red;
+}
+
+h3{
+  font-family: Maven Pro;
+  color: white;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<h1 style="font-family: Courier New" ><center>Login Form</center></h1>
+	<script src="loginformvalid.js"></script>
+	<style>
+		th,td{
+	width: 600px;
+}
+	h2{
+		font-family: Courier New;
+	}
+	legend{
+	text-align: center;
+}
+div{
+	margin: 70px;
+	border-left: 50px;
+	padding-left: 400px;
+}
+fieldset{
+	width: 400px;
+}
+h1,h2{
+	color: white;
+}
+body{
+	background-image: url("space4.jpg");
+}
+th,td{
+	color: white;
+}
+	</style>
+</head>
+<body>
+	<div>
+	<form action="login.php" method="post" accept-charst="utf-8" onsubmit="return formValidation();">
+			<fieldset>
+				<legend><h2><b>Welcome back Jedi!</b></h2></legend>
+				<table>
+					<tr>
+ 						<th align="right">Email:</th>
+ 						<td><input type="text" id="email" value=""></td><br>
+ 						<td><p id="p12"></p></td>
+
+ 					</tr>
+ 					<tr>
+						<th align="right">Password:</th>
+ 						<td><input type="password" id="pwd" value=""></td><br>
+ 						<td><p id="p13"></p></td>
+
+ 					</tr>
+ 					<tr>
+ 						<td><input type="submit" value="login"></td>
+ 					</tr>
+				</table>
+			</fieldset>
+	</form>
+</div>
+</body>
+</html>

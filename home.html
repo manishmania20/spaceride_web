@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space Ride</title>
+	<br><br><h1 style="font-family: Courier New" ><center>A Space Odyssey</center></h1>
+	<link rel="stylesheet" type="text/css" href="prop1.css">
+	<script src="formvalid.js"></script>
+	<script src="loginformvalid.js"></script>
+</head>
+<body>
+<ul class="nav">
+	<li><a href="aboutus.html" title="">About Us</a></li>
+	<li><a href="#" title="">Space Missions</a></li>
+	<li><a href="#" title="">Asteroids</a></li>
+	<li><a href="#" title="">Comets</a></li>
+	<li><a href="#" title="">Interstellar</a></li>
+	<li><a href="register.html" title="hop in now!">Register</a></li>
+	<li><a href="login.html" title="welcome back!">Login</a></li>
+</ul>
+	<img src="front1.png" alt="universe" width="1355" height="400">
+<h2 style="font-family: Courier New">Planets</h2>
+<div class="main1">
+
+
+<a href="mercury.html" title="mercury..."><h3><center>Mercury</center></h3></a>
+<p align="center">
+	<figure align="center">
+	   <img src="mercury2.jpg" alt="mercury" width ="200" height="200" class="center" ><br><br>
+	   <figcaption class="center">Distance from Earth:<b>189.35 mln km</b></figcaption>
+	   <button id="button1" class="centerButton">Show more info...</button>
+	   <br><br>
+	   <h3><div id="more1"></div></h3>
+
+	   <script>
+	   	 document.getElementById('button1').addEventListener('click',loadMercuryInfo);
+
+	   	 function loadMercuryInfo(){
+	   	 	var xhr = new XMLHttpRequest();
+	   	 	xhr.open('GET', 'mercuryinfo.txt', true);
+
+	   	 	xhr.onload = function(){
+	   	 		if(this.status == 200){
+	   	 			document.getElementById('more1').innerHTML = this.responseText;
+	   	 		}
+	   	 	}
+	   	 	xhr.send();
+	   	 }
+	   </script>
+
+    </figure>
+</p>
+
+
+<a href="#" title="venus..."><h3><center>Venus</center></h3></a>
+<p align="center">
+   	<figure align="center">
+		<img src="venus.jpg" alt="venus..." width="200" height="200" class="center"><br><br>
+		<figcaption class="center">Distance from Earth:<b>354.47 mln km</b></figcaption>
+		<button id="button2" class="centerButton">Show more info...</button>
+	   <br><br>
+	   <h3><div id="more2"></div></h3>
+
+	   <script>
+	   	 document.getElementById('button2').addEventListener('click',loadVenusInfo);
+
+	   	 function loadVenusInfo(){
+	   	 	var xhr = new XMLHttpRequest();
+	   	 	xhr.open('GET', 'mercuryinfo.txt', true);
+
+	   	 	xhr.onload = function(){
+	   	 		if(this.status == 200){
+	   	 			document.getElementById('more2').innerHTML = this.responseText;
+	   	 		}
+	   	 	}
+	   	 	xhr.send();
+	   	 }
+	   </script>
+		
+	</figure>
+</p>
+
+
+<a href="#" title="mars..."><h3><center>Mars</center></h3></a>
+<p align="center">
+	<figure align="center">
+		<img src="mars.jpg" alt="mars..." width="200" height="200" class="center"><br><br>
+		<figcaption class="center">Distance from Earth:<b>251.54 mln km</b></figcaption>
+		<button id="button3" class="centerButton">Show more info...</button>
+	   <br><br>
+	   <h3><div id="more3"></div></h3>
+		<script>
+	   	 document.getElementById('button3').addEventListener('click',loadVenusInfo);
+
+	   	 function loadVenusInfo(){
+	   	 	var xhr = new XMLHttpRequest();
+	   	 	xhr.open('GET', 'marsinfo.txt', true);
+
+	   	 	xhr.onload = function(){
+	   	 		if(this.status == 200){
+	   	 			document.getElementById('more3').innerHTML = this.responseText;
+	   	 		}
+	   	 	}
+	   	 	xhr.send();
+	   	 }
+	    </script>
+	</figure>
+</p>
+
+
+<a href="#" title="jupiter..."><h3><center>Jupiter</center></h3></a>
+<p align="center"> 
+	<figure align="center">
+		<img src="jupiter.jpg" alt="jupiter..." width="200" height="200" class="center"><br><br>
+		<figcaption class="center">Distance from Earth:<b>399.37 mln km</b></figcaption>
+		<button id="button4" class="centerButton">Show more info...</button>
+	   <br><br>
+	   <h3><div id="more4"></div></h3>
+
+	   <script>
+	   	 document.getElementById('button4').addEventListener('click',loadJupiterInfo);
+
+	   	 function loadJupiterInfo(){
+	   	 	var xhr = new XMLHttpRequest();
+	   	 	xhr.open('GET', 'jupiterinfo.txt', true);
+
+	   	 	xhr.onload = function(){
+	   	 		if(this.status == 200){
+	   	 			document.getElementById('more4').innerHTML = this.responseText;
+	   	 		}
+	   	 	}
+	   	 	xhr.send();
+	   	 }
+	    </script>
+		
+	</figure>
+</p>
+
+
+<a href="#" title="saturn..."><h3><center>Saturn</center></h3></a>
+<p align="center">
+	<figure align="center">
+		<img src="saturn.jpg" alt="saturn..." width="200" height="200" class="center"><br><br>
+		<figcaption class="center">Distance from Earth:<b>1.46 bln km</b></figcaption>
+		<button id="button5" class="centerButton">Show more info...</button>
+	   <br><br>
+	   <h3><div id="more5"></div></h3>
+
+	   <script>
+	   	 document.getElementById('button5').addEventListener('click',loadSaturnInfo);
+
+	   	 function loadSaturnInfo(){
+	   	 	var xhr = new XMLHttpRequest();
+	   	 	xhr.open('GET', 'saturninfo.txt', true);
+
+	   	 	xhr.onload = function(){
+	   	 		if(this.status == 200){
+	   	 			document.getElementById('more5').innerHTML = this.responseText;
+	   	 		}
+	   	 	}
+	   	 	xhr.send();
+	   	 }
+	    </script>
+		
+	</figure>
+</p>
+
+
+<a href="#" title="uranus..."><h3><center>Uranus</center></h3></a>
+<p align="center">
+	<figure align="center">
+		<img src="uranus.jpg" alt="uranus..." width="200" height="200" class="center"><br><br>
+		<figcaption class="center">Distance from Earth:<b>2.53 bln km</b></figcaption>
+		
+		<button id="button6" class="centerButton">Show more info...</button>
+	   <br><br>
+	   <h3><div id="more6"></div></h3>
+
+	   <script>
+	   	 document.getElementById('button6').addEventListener('click',loadSaturnInfo);
+
+	   	 function loadSaturnInfo(){
+	   	 	var xhr = new XMLHttpRequest();
+	   	 	xhr.open('GET', 'saturninfo.txt', true);
+
+	   	 	xhr.onload = function(){
+	   	 		if(this.status == 200){
+	   	 			document.getElementById('more6').innerHTML = this.responseText;
+	   	 		}
+	   	 	}
+	   	 	xhr.send();
+	   	 }
+	    </script>
+
+	</figure>
+</p>
+
+
+<a href="#" title="neptune..."><h3><center>Neptune</center></h3></a>
+<p align="center">
+	<figure align="center">
+		<img src="neptune.jpg" alt="neptune..." width="200" height="200" class="center"><br><br>
+		<figcaption class="center">Distance from Earth:<b>4.69 bln km</b></figcaption>
+		
+		<button id="button7" class="centerButton">Show more info...</button>
+	   <br><br>
+	   <h3><div id="more7"></div></h3>
+
+	   <script>
+	   	 document.getElementById('button7').addEventListener('click',loadSaturnInfo);
+
+	   	 function loadSaturnInfo(){
+	   	 	var xhr = new XMLHttpRequest();
+	   	 	xhr.open('GET', 'neptuneinfo.txt', true);
+
+	   	 	xhr.onload = function(){
+	   	 		if(this.status == 200){
+	   	 			document.getElementById('more7').innerHTML = this.responseText;
+	   	 		}
+	   	 	}
+	   	 	xhr.send();
+	   	 }
+	    </script>
+
+	</figure>
+</p>
+
+</div>
+<h2 style="font-family: Courier New">Extra Byte</h2>
+<div class="main2">
+<img src="ChartGo.png" alt="analysis" width="500" height="500">
+<table>
+	<caption><b>how long is a year in solar system</b></caption>
+	<thead>
+		<tr>
+			<th>Planet</th>		
+			<th>Number of Days</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Mercury</td>
+			<td>88</td>
+		</tr>
+		<tr>
+			<td>Venus</td>
+			<td>255</td>
+		</tr>
+		<tr>
+			<td>Earth</td>
+			<td>365</td>
+		</tr>
+		<tr>
+			<td>Mars</td>
+			<td>687</td>
+		</tr>
+		<tr>
+			<td>Jupiter</td>
+			<td>4333</td>
+		</tr>
+		<tr>
+			<td>Saturn</td>
+			<td>10759</td>
+		</tr>
+		<tr>
+			<td>Uranus</td>
+			<td>30687</td>
+		</tr>
+		<tr>
+			<td>Neptune</td>
+			<td>60190</td>
+		</tr>
+	</tbody>
+</table>
+</div><hr>
+<ul class="foot">
+<li>Contact Us:+41-67996668</li><br>
+<li>E-mail:spaceride@gmail.com</li><br>
+<li>Twitter:@space_ride77</li>
+</ul>
+</body>
+</html>
